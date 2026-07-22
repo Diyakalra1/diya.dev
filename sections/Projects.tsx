@@ -18,7 +18,7 @@ const projects = [
     tagline: "Adaptive Multi-Agent Skill Evolution System",
     description:
       "A multi-agent AI system that evolves specialized skills through reinforcement learning.",
-    image: "/amases.png",
+    image: "/image.png",
     tech: ["OpenEnv", "PyTorch", "RL", "GRPO"],
     github: "https://github.com/Diyakalra1/skillgraph-adaptive-llm/blob/main/skillgraph_adaptive_env/README.md",
     demo: "https://github.com/Diyakalra1/skillgraph-adaptive-llm/blob/main/skillgraph_adaptive_env/README.md",

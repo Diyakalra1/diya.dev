@@ -62,19 +62,19 @@ export default function Hero() {
               </h1>
 
               <div className="mt-8 flex h-12 items-center text-2xl font-medium lg:text-3xl">
-                <span>I'm a&nbsp;</span>
+                <span>I'm &nbsp;</span>
 
                 <TypeAnimation
                   sequence={[
-                    "Software Developer",
+                    "a Software Developer",
                     2000,
                     "",
                     500,
-                    "Competitive Programmer",
+                    "a Competitive Programmer",
                     2000,
                     "",
                     500,
-                    "AI Engineer",
+                    "an AI Engineer",
                     2000,
                     "",
                     500,

@@ -43,7 +43,7 @@ export default function About() {
                 </span>
                 , currently maintaining a{" "}
                 <span className="font-semibold text-black">
-                  CGPA of 9.63
+                  CGPA of 9.59
                 </span>{" "}
                 while building AI-powered applications,
                 intelligent software systems, and full-stack products.
@@ -101,7 +101,7 @@ export default function About() {
               <Stat number="9.59" label="CGPA" />
               <Stat number="250+" label="LeetCode" />
               <Stat number="170+" label="Active Days" />
-              <Stat number="National Finalist" label="Meta OpenEnv Hackathon" />
+              <Stat number="Top 2.5%" label="Meta OpenEnv Hackathon" />
             </div>
 
             <div className="my-5 h-px bg-neutral-200" />
@@ -117,8 +117,7 @@ export default function About() {
               />
 
               <Achievement
-                title=" Oracle Cloud Infrastructure 2025 Certified
-        Generative AI Professional"
+                title=" Oracle Certified Generative AI Professional"
                 subtitle="Oracle • Issued Oct 2025 • Valid through Oct 2027"
               />
 
@@ -127,10 +126,6 @@ export default function About() {
                 subtitle="APOGEE Business Strategy Competition"
               />
 
-              <Achievement
-                title="1st Place"
-                subtitle="MergeItUp — Enactus TIET"
-              />
             </div>
           </div>
           

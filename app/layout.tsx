@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Diya Kalra",
   description: "Portfolio showcasing AI systems, software engineering projects, competitive programming, and full-stack development.",
+  icons: {
+    icon: "/icon.png",
+  }
 };
 
 export default function RootLayout({

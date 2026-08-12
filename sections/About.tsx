@@ -64,7 +64,7 @@ export default function About() {
                 problem-solving skills through competitive
                 programming. I've solved{" "}
                 <span className="font-semibold text-black">
-                  200+ LeetCode problems
+                  250+ LeetCode problems
                 </span>
                 , maintained{" "}
                 <span className="font-semibold text-black">
@@ -98,22 +98,28 @@ export default function About() {
             </p>
 
             <div className="grid grid-cols-2 gap-5">
-              <Stat number="9.63" label="CGPA" />
-              <Stat number="200+" label="LeetCode" />
+              <Stat number="9.59" label="CGPA" />
+              <Stat number="250+" label="LeetCode" />
               <Stat number="170+" label="Active Days" />
-              <Stat number="5+" label="Projects" />
+              <Stat number="National Finalist" label="Meta OpenEnv Hackathon" />
             </div>
 
             <div className="my-5 h-px bg-neutral-200" />
 
             <p className="uppercase text-sm tracking-[0.22em] text-neutral-500 mb-3">
-              Achievements
+              Achievements & Certifications
             </p>
 
             <div className="space-y-6">
               <Achievement
                 title="Top 2.5%"
                 subtitle="Meta PyTorch OpenEnv Hackathon"
+              />
+
+              <Achievement
+                title=" Oracle Cloud Infrastructure 2025 Certified
+        Generative AI Professional"
+                subtitle="Oracle • Issued Oct 2025 • Valid through Oct 2027"
               />
 
               <Achievement

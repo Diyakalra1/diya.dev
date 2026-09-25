@@ -4,7 +4,7 @@ const topSkills = [
   "Python",
   "C++",
   "JavaScript",
-  "TypeScript",
+ 
   "React",
   "Next.js",
   "SQL",

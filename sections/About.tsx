@@ -64,13 +64,9 @@ export default function About() {
                 problem-solving skills through competitive
                 programming. I've solved{" "}
                 <span className="font-semibold text-black">
-                  250+ LeetCode problems
+                  300+ LeetCode problems
                 </span>
-                , maintained{" "}
-                <span className="font-semibold text-black">
-                  170+ active coding days
-                </span>
-                , and actively participate in hackathons
+                 and I also actively participate in hackathons
                 that push me to build innovative
                 solutions under real-world constraints.
               </p>
@@ -99,9 +95,7 @@ export default function About() {
 
             <div className="grid grid-cols-2 gap-5">
               <Stat number="9.59" label="CGPA" />
-              <Stat number="250+" label="LeetCode" />
-              <Stat number="170+" label="Active Days" />
-              <Stat number="Top 2.5%" label="Meta OpenEnv Hackathon" />
+              <Stat number="300+" label="LeetCode" />
             </div>
 
             <div className="my-5 h-px bg-neutral-200" />

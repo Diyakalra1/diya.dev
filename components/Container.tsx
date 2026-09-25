@@ -7,7 +7,7 @@ interface Props {
 export default function Container({ children }: Props) {
   return (
     // <div className="w-full flex justify-center border-4 border-red-500">
-      <div className="w-full max-w-[1320px] m-auto  ">
+      <div className=" w-[90%] max-w-[1320px] mx-auto ">
         {children}
       </div>
     

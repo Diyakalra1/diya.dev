@@ -13,12 +13,12 @@ const topSkills = [
 
 const bottomSkills = [
   "LangChain",
- "DSA"
+  "DSA",
   "RAG",
-"My SQL"
+  "My SQL",
   "Scikit-Learn",
   "Gemini",
-    "Pandas"
+  "Pandas",
   "Git",
 ];
 

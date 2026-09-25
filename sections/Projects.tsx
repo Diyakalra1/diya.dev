@@ -12,8 +12,64 @@ import { FaGithub } from "react-icons/fa";
 import Container from "@/components/Container";
 
 const projects = [
-  {
+
+    {
     id: 1,
+    name: "MedAssist",
+    tagline: "Medical Evidence Copilot built using Traceable RAG with minimal latency",
+    description:
+    "A retrieval-grounded AI assistant for contextual medical information.",
+    image: "MedAssist.png",
+    tech: ["LangChain", "RAG", "VectorDB", "Flask", "gemini-3-flash-preview"],
+    github: "https://github.com/Diyakalra1/Medical-Chatbot-",
+    demo: "https://youtu.be/1YD7Zs4BcCA",
+    pinned: false,
+    
+    problem:
+    "Medical assistants powered solely by general-purpose LLMs often produce ungrounded responses, perform unnecessary LLM inference for unsupported queries, and lack mechanisms to validate evidence before generation.",
+    
+    built:
+    "Developed MedAssist, an evidence-aware medical RAG system integrating semantic query routing, vector retrieval, CrossEncoder reranking, context evaluation, and grounded response generation using Gemini and Pinecone.",
+    
+    results:
+    "Reduced unnecessary LLM invocations by 52%, lowered average end-to-end latency by 51.6% (1050 ms → 508 ms) across a 100-query benchmark, achieved 78% routing decision agreement, and promoted higher-quality evidence in 56% of medical queries while maintaining a 508 ms average inference latency.",
+    
+    
+    
+    challenges:
+    "Unnecessary LLM inference was the primary latency bottleneck, while weak retrieval quality increased the risk of ungrounded responses. Introduced semantic routing, CrossEncoder reranking, and an evidence-aware context evaluator to improve retrieval precision and eliminate unsupported generations."
+  },
+  
+  {
+    id: 2,
+    name: "Local Language Integrator",
+    tagline: "Real-Time Multilingual Communication Platform",
+    description:
+    "A real-time chat platform enabling communication across 14 Indian languages.",
+    image: "/locallanguage.png",
+    tech: ["React", "Socket.io", "Firebase", "Python","FASTAPI"],
+    github: "https://github.com/Diyakalra1/local-language",
+    demo: "https://local-language-ashen.vercel.app/login",
+    pinned: true,
+    
+    problem:
+    "Language barriers make real-time digital communication difficult across India's diverse linguistic ecosystem.",
+    
+    built:
+    "Built a multilingual chat system with real-time translations, text-to-audio, and audio-to-text capabilities.",
+    
+    results:
+    "Enabled real-time communication across 14 Indian languages through a unified messaging experience.",
+    
+    challenges:
+    
+    
+    "Real-time message delivery	-Messages were initially received only after a page refresh. This was resolved by ensuring users establish a Socket.IO connection and join the appropriate conversation room before sending or receiving messages. Responsive user interface	-Replaced fixed-width layouts with responsive Tailwind CSS utilities to ensure a consistent experience across different screen sizes and deployments."
+  },
+  
+
+  {
+    id: 3,
     name: "AMASES",
     tagline: "Adaptive Multi-Agent Skill Evolution System",
     description:
@@ -23,73 +79,19 @@ const projects = [
     github: "https://github.com/Diyakalra1/skillgraph-adaptive-llm/blob/main/skillgraph_adaptive_env/README.md",
     demo: "https://github.com/Diyakalra1/skillgraph-adaptive-llm/blob/main/skillgraph_adaptive_env/README.md",
     pinned: true,
-
+  
     problem:
       "Multi-agent systems often rely on static agent roles and struggle to adapt their capabilities across diverse tasks.",
-
+  
     built:
       "Designed Planner, Debater, and Integrator agents with skill-tracking graphs, deterministic reward decomposition, and a TRL-GRPO training pipeline.",
-
+  
     results:
       "Built the system across 15 task environments and finished in the Top 2.6% among 31,000+ hackathon registrations.",
-
+  
     challenges:
       "Designing stable reward signals and coordinating specialized agents while preventing overlapping agent behaviour.",
-  },
-
-  {
-    id: 2,
-    name: "Local Language Integrator",
-    tagline: "Real-Time Multilingual Communication Platform",
-    description:
-      "A real-time chat platform enabling communication across 14 Indian languages.",
-    image: "/locallanguage.png",
-    tech: ["React", "Socket.io", "Firebase", "Python","FASTAPI"],
-    github: "https://github.com/Diyakalra1/local-language",
-    demo: "https://local-language-ashen.vercel.app/login",
-    pinned: true,
-
-    problem:
-      "Language barriers make real-time digital communication difficult across India's diverse linguistic ecosystem.",
-
-    built:
-      "Built a multilingual chat system with real-time translations, text-to-audio, and audio-to-text capabilities.",
-
-    results:
-      "Enabled real-time communication across 14 Indian languages through a unified messaging experience.",
-
-    challenges:
-     
-
-"Real-time message delivery	-Messages were initially received only after a page refresh. This was resolved by ensuring users establish a Socket.IO connection and join the appropriate conversation room before sending or receiving messages. Responsive user interface	-Replaced fixed-width layouts with responsive Tailwind CSS utilities to ensure a consistent experience across different screen sizes and deployments."
-  },
-
-  {
-    id: 3,
-    name: "MedAssist",
-    tagline: "Medical Evidence Copilot built using Traceable RAG with minimal latency",
-    description:
-      "A retrieval-grounded AI assistant for contextual medical information.",
-    image: "MedAssist.png",
-    tech: ["LangChain", "RAG", "VectorDB", "Flask", "gemini-3-flash-preview"],
-    github: "https://github.com/Diyakalra1/Medical-Chatbot-",
-    demo: "https://youtu.be/1YD7Zs4BcCA",
-    pinned: false,
-
-    problem:
-  "Medical assistants powered solely by general-purpose LLMs often produce ungrounded responses, perform unnecessary LLM inference for unsupported queries, and lack mechanisms to validate evidence before generation.",
-
-built:
-  "Developed MedAssist, an evidence-aware medical RAG system integrating semantic query routing, vector retrieval, CrossEncoder reranking, context evaluation, and grounded response generation using Gemini and Pinecone.",
-
-results:
-  "Reduced unnecessary LLM invocations by 52%, lowered average end-to-end latency by 51.6% (1050 ms → 508 ms) across a 100-query benchmark, achieved 78% routing decision agreement, and promoted higher-quality evidence in 56% of medical queries while maintaining a 508 ms average inference latency.",
-
-    
-
-    challenges:
-  "Unnecessary LLM inference was the primary latency bottleneck, while weak retrieval quality increased the risk of ungrounded responses. Introduced semantic routing, CrossEncoder reranking, and an evidence-aware context evaluator to improve retrieval precision and eliminate unsupported generations."
-  },
+  }
 ];
 
 export default function Projects() {
@@ -106,9 +108,7 @@ export default function Projects() {
     amount: 0.3,
   });
 
-  const sortedProjects = [...projects].sort(
-    (a, b) => Number(b.pinned) - Number(a.pinned)
-  );
+ const sortedProjects = projects;
 
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {

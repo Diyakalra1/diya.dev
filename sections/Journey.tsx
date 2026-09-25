@@ -11,7 +11,7 @@ type ActivityDay = {
 
 export default function Journey() {
   const [activity, setActivity] = useState<ActivityDay[]>([]);
-  const [totalSolved, setTotalSolved] = useState(257);
+  const [totalSolved, setTotalSolved] = useState(320);
 
   const ref = useRef(null);
 

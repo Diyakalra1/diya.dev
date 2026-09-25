@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import Projects from "@/sections/Projects";
-// import Achievements from "@/sections/Achievements";
 import Contact from "@/sections/Contact";
 import Journey from "@/sections/Journey";
 import SkillsMarquee from "@/sections/SkillsMarquee";

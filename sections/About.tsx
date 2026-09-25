@@ -65,8 +65,7 @@ export default function About() {
                 programming. I've solved{" "}
                 <span className="font-semibold text-black">
                   300+ LeetCode problems
-                </span>
-                 and I also actively participate in hackathons
+                </span> and I also actively participate in hackathons
                 that push me to build innovative
                 solutions under real-world constraints.
               </p>
